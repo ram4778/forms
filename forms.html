@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h1>course registration form</h1>
+    <form action="">
+      <fieldset>
+        <legend>personal details</legend>
+        <table>
+          <tr>
+            <td><label for="fn">first name</label></td>
+            <td>
+              <input type="text" placeholder="eg.ram" name="fn" required />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td><label for="sn">surname</label></td>
+            <td><input type="text" placeholder="eg.sree" required /></td>
+          </tr>
+          <tr>
+            <td><label for="mn"> mobile number </label></td>
+            <td>
+              <input
+                type="tel"
+                placeholder="eg.7848554655"
+                maxlength="10"
+                minlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">email</label></td>
+            <td>
+              <input
+                type="email"
+                placeholder="eg.jhffhihht@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">password</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for=" confirm password">confirm password</label></td>
+            <td><input type="password" id="confirm password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DoB</label></td>
+            <td><input type="date" id="dob" name="DoB" required /></td>
+          </tr>
+          <tr>
+            <td><label for="grnder">gender</label></td>
+            <td>
+              <input type="radio" value="male" name="gender" /> male
+              <input type="radio" value="female" name="gender" />female
+              <input type="radio" name="gender" value="others" />others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">age</label></td>
+            <td><input type="number" max="100" min="18" /></td>
+          </tr>
+          <tr>
+            <td><label for="select country">select country</label></td>
+            <td>
+              <select name="select country" id="select country">
+                <option value="">select country</option>
+                <option value="ind">india</option>
+                <option value="aus">australia</option>
+                <option value="eng">england</option>
+                <option value="sa">south africa</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="up">upload pic</label></td>
+            <td><input type="file" required /></td>
+          </tr>
+          <tr>
+            <td>
+              <button>reset</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>course details</legend>
+        <table>
+          <tr>
+            <td><label for="sc">select course</label></td>
+            <td>
+              <select name="sc" id="sc">
+                <option value="">select course</option>
+                <option value="ece">electronics</option>
+                <option value="cse">computer sci</option>
+                <option value="eee">electrical</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dm">delivery mode</label></td>
+            <td>
+              <input type="checkbox" />online<input type="checkbox" />offline
+            </td>
+          </tr>
+        </table>
+        <label for="comments"> comments</label>
+        <textarea
+          width="70px"
+          height="50px"
+          placeholder="eg.text a message to reach us."
+          required
+        ></textarea>
+        <br />
+        <table>
+          <tr>
+            <td><input type="checkbox" /></td>
+
+            <td>
+              <h5 required>
+                I agreee the terms and conditions said by the above one
+              </h5>
+            </td>
+          </tr>
+        </table>
+        <button>submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
